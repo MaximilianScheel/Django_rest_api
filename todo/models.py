@@ -10,6 +10,6 @@ class Todo(models.Model):
     user =  models.ForeignKey(
         User,
         on_delete=models.CASCADE,
-        default=None
+        default=None,
+        null=True,
     )
-    
