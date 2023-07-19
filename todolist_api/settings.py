@@ -26,7 +26,8 @@ SECRET_KEY = 'django-insecure-f!wc_ld6vxsgl7unx8#m*ubxfsa(&(7dy)^4o7z^wdc$&4mqhk
 DEBUG = True
 
 ALLOWED_HOSTS = ['maxsc.pythonanywhere.com',
-                 'localhost']
+                 'localhost',
+                 '127.0.0.1',]
 
 
 # Application definition
@@ -38,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'todo',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
